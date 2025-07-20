@@ -1,0 +1,85 @@
+<!-- 1. 文档基础结构 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 2. 头部信息（Head） -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to LHX's world.</title>
+
+  <!-- 3. 外部资源引用 -->
+  <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+  <script src="index\particles.min.js"></script>
+</head>
+
+<!-- 4. 页面主体（Body） -->
+<body>
+  <!-- particles-js div：粒子效果的容器 -->
+  <div id="particles-js"></div>
+
+  <div class="content">
+    <div class="logo">
+      <img src="index/HX.jpg" alt="logo" class="h1-special">
+      <br />
+      <h1 style="color: white" class="h1-special">XUAN</h1>
+    </div>
+
+    <div class="nav">
+      <a href="main.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="h1-special">Enter</h1>
+      </a>
+
+      <a href="monument\monument.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="h1-special">Monument</h1>
+      </a>
+
+      <a href="https://blog.csdn.net/BUCEA_NO_2?spm=1000.2115.3001.5343">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="h1-special">Blog</h1>
+      </a>
+
+      <a href="https://github.com/qiuxi520">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="h1-special">Github</h1>
+      </a>
+    </div>
+
+    <div class="content2">
+      <h1>Something new...</h1>
+      <p>2025-6-12 ———————————— New CSDN Blog</p>
+      <p>2025-6-29 ———————————— A brand-new index interface</p>
+      <p>2025-7-17 ———————————— Optimization of the index interface</p> 
+    </div>
+  </div>
+
+  <!-- trail-canvas：用于实现鼠标轨迹效果的画布 -->
+  <canvas id="trail-canvas"></canvas>
+
+  <!-- 加载本地JavaScript文件（位于index文件夹下的script.js） -->
+  <script src="index/script.js"></script>
+
+  <!-- 背景粒子（最底层）
+    鼠标轨迹（中间层）
+    文字内容（最上层） -->
+</body>
+
+</html>
