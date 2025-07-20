@@ -1,0 +1,60 @@
+/* 重置默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+ text-decoration: none;
+ }
+
+body {
+    /* 背景图设置 */
+    background-image: url('demo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 可选：固定背景 */
+    
+    /* 最小高度保证内容显示 */
+    min-height: 100vh;
+    
+    /* 优雅的字体渲染 */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    
+    /* 防止内容溢出 */
+    overflow-x: hidden;
+}
+
+/* 内容容器样式 */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    
+    /* 半透明背景增强文字可读性 */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+    /* 垂直居中技巧 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 响应式设计 - 移动设备适配 */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    body {
+        background-attachment: scroll; /* 移动端取消固定背景 */
+    }
+}
